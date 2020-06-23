@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>속성 선택자</title>
+        <style>
+            h1 {
+                background: yellow;
+            }
+
+            p[align]{
+                color: red;
+            }
+
+            p[align="right"]{
+                background: yellow;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>H1 태그에 선택자를 적용한 경우</h1>
+        <p>p에 속성의 적용 여부를 확인합니다. 속성이 없기 때문에 정의한 CSS가 적용되지 않습니다.</p>
+        <p align="center">p 태그에 속성 부여시 CSS 적용 여부를 확인합니다. 글씨가 붉은색입니다.</p>
+        <p align="right">p 태그에 속성의 적용 여부를 확인합니다.</p>
+    </body>
+</html>

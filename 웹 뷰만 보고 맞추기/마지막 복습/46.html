@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>순서 의사 요소</title>
+        <style>
+            p:first-letter {
+                font-weight: bold;
+                font-size: 30pt;
+                color: red;
+            }
+            p:first-line {
+                background: yellow;
+            }
+
+            h3:before {
+                content: "START-";
+                color: red;
+            }
+
+            h3:after {
+                content: "-END";
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>안녕하세요!</h3>
+        <div>
+            <p>어서 오세요.</p>
+            <p>반갑습니다.</p>
+        </div>
+    </body>
+</html>
